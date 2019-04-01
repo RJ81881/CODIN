@@ -1,10 +1,16 @@
-   <!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
     <head>
         <title>Code</title>
         <style>
+		@media screen and (max-width:500px)
+		{
+		  .bb{
+		     position:absolute;
+			 left:120px;
+			} 
+	    }
         body{
-            overflow:hidden;
             background-color:#f2f2f2;
            }
         *{
@@ -13,66 +19,75 @@
          }     
       .heading{
             width:auto;
-            height:150px;
+            height:130px;
+			font-size:60px;
             background-color:#f2f2f2;
             text-align:center;
-            line-height:150px;
-            
+            line-height:130px;
         }    
         .c0{
             color:#ee;
+			font-size:50px;
             font-family:serif;
             display:inline;
-            font-size:45px;
         }
         .c1{
             color:green;
+			font-size:50px;
             font-family:serif;
             display:inline;
-            font-size:45px;
         }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
         .d .menu{
             background-color:green;
             opacity:0.7;
             width:auto;
             height:90px;
+			margin:0px;
+            position:sticky;
         }
       
        .d .menu #sidebar{
            position:absolute;
-           width:350px;
-           height:100%;
-           left:-350px;
+           width:400px;
+           height:1000px;
+           left:-400px;
            opacity:1.0;
            background-color:black;
        }     
         .d .menu #sidebar ul li{
              color:white;
              list-style-type:none;
-             padding:20px 20px;
+             padding:20px 15px;
+			 font-size:25px;
          }  
          .d .menu #sidebar .toggle{
              position:absolute;
-             left:350px;
+             left:400px;
              top:0px;
-             width:80px;
-             height:90px;
+             width:60px;
+             height:50px;
              margin:0px;
-             padding:10px;
+             padding:20px 15px;
             // border:1px solid black;
             }
            .d .menu #sidebar ul li a{
             color:white;
+			font-size:25px;
             text-decoration:none;
-            padding:20px 10px;
+            padding:20px 15px;
             font-weight:bold;
         }    
          .d .menu #sidebar .toggle span{
              display:block;
-             width:50px;
-             height:10px;
+             width:38px;
+             height:7px;
              background-color:#151719;
-             margin:8px;
+             margin:5px;
          }  
          .d .menu #sidebar.active 
         {
@@ -92,24 +107,24 @@
               text-align:center;
           }
           .main h1{
-              font-family:fantasy;
-              font-size:70px;
-              margin:10px;
+              font-family:Georgia;
+              font-size:45px;
+              margin:5px;
               padding:30px 30px 15px 30px;
           }
           .main p{
-              padding:18px;
-              font-size:20px;
+              padding:15px;
+              font-size:18px;
           }
           .main .bb{
-              width:150px;
+              width:120px;
               height:50px;
-              margin:15px 15px 15px 20px;
+              margin:15px 15px 15px 10px;
               border:1px solid black;
               border-radius:4px;
               text-align:center;
               position:absolute;
-              left:230px;
+              left:680px;
               line-height:50px;
              }
              .main .bb a{
@@ -124,7 +139,7 @@
     <div class="heading">
        <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
     </div>
-   
+    
    <div class="d">
     <div class="menu">
       <div id="sidebar">
@@ -156,7 +171,7 @@
       <div class="main" id="m">
  <h1>C LANGUAGE</h1>
  <p>A general purpose programming language</p>
-<div class="bb"><a href="index1.html">Learn C</a>
+<div class="bb"><a href="WEBSITE_SUPPORT.html">Learn C</a>
 </div>
       
       
