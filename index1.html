@@ -1,30 +1,153 @@
-
-             
+           <!DOCTYPE html>
+<html>
+    <head>
+        <title>Code</title>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
       
-
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+          .main{
+              width:auto;
+              margin:0px;
+              height:300px;
+              background-color:white;
+              //border:1px solid black;
+              //border-radius:4px;
+              text-align:center;
+          }
+          .main h1{
+              font-family:Georgia;
+              font-size:45px;
+              margin:5px;
+              padding:30px 30px 15px 30px;
+          }
+          .main p{
+              padding:15px;
+              font-size:20px;
+          }
+          .main .bb{
+              width:120px;
+              height:50px;
+              margin:15px 15px 15px 10px;
+              border:1px solid black;
+              border-radius:4px;
+              text-align:center;
+              position:sticky;
+              left:400px;
+              line-height:50px;
+             }
+             .main .bb a{
+                 display:block;
+                 text-decoration:none;
+                 color:black;
+             }
               
              .overview{
-              margin:0px 10px 10px 5px;
-              height:auto;
+              margin:15px 15px 15px 5px;
+              height:4500px;
               position:absolute;
               left:0px;
               width:auto;
               //border:1px solid black;
             }
             .overview h1{
-                padding:20px;
+                padding:25px;
                 line-height:120px;
                 font-weight:normal;
                 text-align:center;
-                font-size:80px;
+                font-size:90px;
                 font-family:sans-serif;
             }
             .overview p{
                 margin:5px;
-                padding:15px 10px;
+                padding:20px 15px;
                 letter-spacing:3px;
                 word-spacing:5px;
-                line-height:30px;
+                line-height:35px;
                 font-size:35px;
             }
             .overview p:first-letter{
