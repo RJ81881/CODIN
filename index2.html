@@ -90,7 +90,57 @@
           {
               background-color:Dodgerblue;
           }
-          
+          .features ol li:first-letter,.features p:first-letter
+            {
+                font-size:30px;
+                color:blue;
+                font-weight:bold;
+                font-family:Georgia;
+            }
+            .features{
+                width:auto;
+                height:auto;
+                background-color:white;
+            }
+            .features h1{
+                padding:10px 10px 5px 10px;
+                text-align:center;
+            }
+            .features ol{
+                padding:5px;
+                margin-left:15px;
+            }
+            .features ol li{
+                padding:8px;
+                margin:6px;
+                letter-spacing:1px;
+                word-spacing:2px;    
+            }
+            .features p{
+                padding:8px;
+                margin:6px;
+                letter-spacing:1px;
+                word-spacing:2px;
+            }
+             .features ol li:first-letter{
+                font-size:30px;
+                color:blue;
+                font-weight:bold;
+                font-family:Georgia;
+             }
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         </style>
     </head>
     <body>
@@ -127,6 +177,28 @@
       </div>
       </div>
       
+	     <div class="features" id="v2">
+<h1>Features of C language</h1>
+<ol>
+<li>It is a Object oriented programming language with set of built-in functions and operators that 
+can be used to write any complex program.</li>
+<li>Programs Written in C are efficient and fast. This is due to its variety of data type and powerful 
+operators.</li>
+<li>C is highly portable this means that programs once written can be run on another machines with 
+little or no modification.</li>
+
+
+<li>A C program is basically a collection of functions that are supported by C library. We can also 
+create our own function and add it to C library.</li>
+<li>C language is the most widely used language in operating systems and embedded system 
+development today.</li>
+<li>It is also a basic programming language for beginners.</li>
+</ol>
+<p>C Language is an amazing language when it comes to simplicity of syntax with decent 
+functionality. It is a perfect mix of both, which makes it the best language to be taught to students 
+who have just started learning coding, to introduce them into the programming world.</p>
+</div>
+   
       
     <script>
     var i=0;
@@ -138,11 +210,11 @@ i++;
 }
 function ff(i){
    if((i%2)!=0) 
-   {  document.getElementById("m").style.display="none";
+   {  document.getElementById("v2").style.display="none";
 }
 else
 {
-   document.getElementById("m").style.display="block"; 
+   document.getElementById("v2").style.display="block"; 
 }
 }
 </script>
