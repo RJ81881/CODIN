@@ -1,0 +1,270 @@
+
+   <!DOCTYPE html>
+<html>
+    <head>
+        <title>Code</title>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+		  
+		   .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+		
+            .m1 h1{
+			 font-family:Georgia;
+			 padding:13px;
+			 margin:15px;
+			 }
+            .m1 p{
+               padding:13px;
+               margin:15px; 
+			   font-size:22px;
+		       word-spacing:3px;
+		       letter-spacing:1px;
+		       line-height:35px;
+			 }  
+		
+		
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Precedence and Associativity</a></li>
+            <li><a href="index9.html">Switch Statements</a></li>
+            <li><a href="index10.html">Arrays</a></li>
+            <li><a href="index11.html">Strings and Character Array</a></li>
+            <li><a href="index12.html">Loops</a></li>
+            <li><a href="index13.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+         <div id="m" class="m1">
+         <h1>Precedence and Assosciativity of Operators</h1>
+		 <p>Precedence means when in an expression we have more than one Operator then which operation has to be performed first is decided by the precedence rule.</p>
+
+         <p>Assosciativity specifies that when we have the same operators occuring more than once in an expression then from where we need to start our computation like : either L to R or  R to L </p>
+         <p>The naming of an address is known as variable.and Variable is the name of memory location. </p>
+         
+		 <div class="t">
+         <table>
+		 
+         <tr>
+	     <th>Precedence</th>
+	     <th>Operators</th>
+	     <th>Assosciativity</th>
+	     </tr>
+		 
+	     <tr>
+	     <td>1</td>
+	     <td>() , [] , . , -></td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>2</td>
+	     <td>++ , -- , ~ , !</td>
+	     <td>R to L</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>3</td>
+	     <td>* , / , %</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>4</td>
+	     <td>+ , -</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>5</td>
+	     <td>&lt&lt , &gt&gt</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>6</td>
+	     <td>< , <= , > , >=</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>7</td>
+	     <td>== , !=</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>8</td>
+	     <td>& , ^ , |</td>
+	     <td>L to R</td>
+	     </tr>
+		 
+		 <tr>
+	     <td>9</td>
+	     <td>&& , ||</td>
+	     <td>L to R</td>
+	     </tr>
+         </table>
+         </div> 
+
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
