@@ -1,0 +1,217 @@
+
+   <!DOCTYPE html>
+<html>
+    <head>
+        <title>Code</title>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+            .m1 h1, .m1 h2{
+			 font-family:Georgia;
+			 padding:10px;
+			 margin:10px;
+			 }
+            .m1 p{
+               padding:10px;
+               margin:5px; 
+			   font-size:22px;
+		       word-spacing:3px;
+		       letter-spacing:1px;
+		       line-height:30px;
+			 }  
+			 .m1 ol {
+		     margin-left:30px;
+			 padding:10px;
+			 }
+			 .m1 ol li{
+			padding:10px;
+            margin-left:5px; font-size:22px;
+		    word-spacing:2px;
+		    letter-spacing:1px;
+		    line-height:30px;
+		    }
+			.m1 ol li:first-letter{
+			             font-size:35px;
+						 color:blue;
+						 }
+		
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Switch Statements</a></li>
+            <li><a href="index9.html">Arrays</a></li>
+            <li><a href="index10.html">Strings and Character Array</a></li>
+            <li><a href="index11.html">Loops</a></li>
+            <li><a href="index12.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+      <div id="m" class="m1">
+  
+         <h1>Variables</h1>
+		 <p>When we want to store any data on our computer, we store it in the computer's memory space. Instead of remembering the complex address of that memory space where we have stored our data, our operating system provides us with an option to create folders and name them, so that it becomes easier for us to find it and access it.</p>
+
+         <p>Similarly, in C , when we want to store some data in our program, we can store it in a memory space and name the memory space so that it becomes easier for us to access it.</p>
+         <p>The naming of an address is known as variable.and Variable is the name of memory location. </p>
+         <div class="q">
+         <h2>Datatype of Variable</h2>
+         <p>A variable in C language must be given a type, which defines what type of data the variable will hold.</p>
+         <p>it can be an integer or floating number or be a character etc</P>
+          </div>
+        <h2>Rules to name a Variable</h2>
+        <ol>
+		<li>Keywords are not allowed as variable name.</li>
+		<li>Upper and lower case names are treated as different,as C is case-sensitive</li>
+		<li>Variable name must not start with a digit.</li>
+		<li>Variable name can consist of alphabets, digits and special symbols like underscore (_) .</li>
+		<li>Blank or spaces are not allowed in variable name.</li>
+		</ol>
+         <div class="q">
+	    <h2>Declaration of variables</h2>
+		<p>Declaration of variables should be done before they are used in the program. Declaration does the following things :</p>
+        <ol>
+		<li>It tells the compiler what the variable name is.</li>
+		<li>It specifies what type of data that the variable will hold.</li>
+		<li>Declaration is more like informing the compiler that there exist a variable with following datatype which is used in the program.</li>
+		<li>Until the variable is defined the compiler doesn't have to worry about allocating memory space to the variable.</li>
+        </ol>		
+        </div>
+ 
+         <h2>Defining a variable</h2>
+		 <p>Defining a variable means the compiler has to now assign a storage to the variable because it will be used in the program. We can even define multiple variables of same datatype in a single line by using comma to separate them.</p>
+		 
+		 <h2>Initializing a variable</h2>
+         <p>Initializing a variable means to provide it with a value. A variable can be initialized and defined in a single statement, like: int v =99;</p>		 
+  
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
