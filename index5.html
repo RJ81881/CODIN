@@ -1,3 +1,4 @@
+
    <!DOCTYPE html>
 <html>
     <head>
@@ -119,17 +120,21 @@
             {
                background-color:#eee; 
             }
-            .g h1{
-                padding:20px;
+            .g h1 , .i h1 {
+                padding:10px;
                 margin:10px;
-            }.g p{
+            }.g p , .i p , .i ol li{
 		   padding:10px;
-                margin:5px; font-size:20px;
+            margin:5px; font-size:25px;
 		    word-spacing:5px;
 		    letter-spacing:2px;
-		    line-height:20px;
+		    line-height:23px;
 		    }
-	
+	      .i ol{
+		     margin-left:25px;
+			 padding:20px;
+			 }
+			  
         </style>
     </head>
     <body>
@@ -173,7 +178,7 @@
         </div>  
 	      <div class="t">
           <table>
-              <caption><h3>KEYWORDS</h3></caption>
+              <caption style="font-size:28px;">KEYWORDS</caption>
             <tr>
               <td>int</td> 
               <td>float</td> 
@@ -231,7 +236,35 @@
             </tr>
           </table>
         </div>
+		
+		<div class="i">
+		<h1>Identifiers</h1>
+		<p>In C language identifiers are the names given to variables, constants, functions and user-define data. These identifier are defined against a set of rules.</p>
+
+          <h1>Rules for an Identifier</h1>
+		  
+		  <ol>
+		     <li>An Identifier can only have alphanumeric characters(a-z , A-Z , 0-9) and underscore(_).</li>
+		     <li>The first character of an identifier can only contain alphabet(a-z , A-Z) or underscore (_).</li>
+		     <li>Keywords are not allowed to be used as Identifiers.</li>
+		     <li>No special characters, such as semicolon, period, whitespaces, slash or comma are permitted to be used in or as Identifier.
+</li>
+             <li>Identifiers are also case sensitive in C. For example rahul and Rahul are two different identifiers in C.</li> 
+		  
+		  </ol>
+		            <h1>Character set</h1>
+					<p>In C language characters are grouped into the following catagories,</p>
+             <ol>
+                <li>Letters(all alphabets a to z & A to Z).</li>
+				<li>White spaces.</li>
+				<li>Special characters, ( such as colon :, semicolon ;, period ., underscore _, ampersand & etc).
+White spaces.</li>
+                <li>Digits (all digits 0 to 9).</li>
+            </ol>
+
+		  
       </div>
+	  </div>
     <script>
     var i=0;
     function gg()
