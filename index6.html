@@ -1,0 +1,351 @@
+
+   <!DOCTYPE html>
+<html>
+    <head>
+        <title>Code</title>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+            
+        .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+            .m1 h1{
+			 font-family:Georgia;
+			 padding:10px;
+			 font-weight:normal;
+			 margin:10px;
+			 }
+            .m1 p{
+               padding:10px;
+               margin:5px; 
+			   font-size:25px;
+		       word-spacing:2px;
+		       letter-spacing:1px;
+		       line-height:28px;
+			 }  
+			 .m1 ol {
+		     margin-left:30px;
+			 padding:10px;
+			 }
+			 .m1 ol li{
+			padding:10px;
+            margin-left:5px; font-size:25px;
+		    word-spacing:2px;
+		    letter-spacing:1px;
+		    line-height:28px;
+		    }
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Switch Statements</a></li>
+            <li><a href="index9.html">Arrays</a></li>
+            <li><a href="index10.html">Strings and Character Array</a></li>
+            <li><a href="index11.html">Loops</a></li>
+            <li><a href="index12.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+      <div id="m" class="m1">
+  
+         <h1>Data types</h1>
+		 <p>Data types specify the type of the data that we enter and the storage capacity of that data type. C language has some predefined set of data types to handle various kinds of data that we can use in our program. These datatypes have different storage capacities.</p>
+         <h1>There are 2 different type of data types in C</h1>
+          
+            <ol>
+            <li>Primary data types:
+                          - These are fundamental data types in C namely integer(int), floating point(float), character(char) and void.
+               </li>
+            <li>Derived data types:
+                          - Derived data types are nothing but primary datatypes but a little twisted or grouped together like arrays, stuctures, union and pointer.
+             </li>
+			</ol>                
+  <p>Data type determines the type of data a variable will hold. If a variable x is declared as int. it means x can hold integer values only. Every variable which is used in the program must be declared as what data-type it is.</p>
+ 
+ <div class="t">
+  <table>
+    <tr>
+	<th rowspan="4">Primary data types:</th>
+	<td>integer</td>
+	</tr>
+	<tr><td>float</td></tr>
+	<tr><td>char</td></tr>
+	<tr><td>void</td></tr>
+</table>
+</div>
+ <h1>Integer type</h1>
+<p>Integers are used to store whole numbers, Size and range of Integer type on 16-bit machine:</p>
+
+  <div class="t">
+  <table>
+    <tr>
+	<th>Type</th>
+	<th>Size (Bytes)</th>
+	<th>Range</th>
+	</tr>
+	
+	<tr>
+	<td>Int or signed int</td>
+	<td>2</td>
+	<td>-32,768 to 32767</td>
+	</tr>
+	
+    <tr>
+	<td>Short int or signed short int</td>
+	<td>1</td>
+	<td>-128 to 127</td>
+	</tr>
+	
+	<tr>
+	<td>Unsigned short int</td>
+	<td>1</td>
+	<td>0 to 255</td>
+	</tr>
+	
+	<tr>
+	<td>Unsigned int</td>
+	<td>2</td>
+	<td>0 to 65535</td>
+	</tr>
+	
+	<tr>
+	<td>Long int or signed long int</td>
+	<td>4</td>
+	<td>-2,147,483,648 to 2,147,483,647</td>
+	</tr>
+	
+	<tr>
+	<td>Unsigned long int</td>
+	<td>4</td>
+	<td>0 to 4,294,967,295</td>
+	</tr>
+</table>
+</div>
+
+<h1>Floating point type</h1>
+<p>Floating types are used to store real numbers.</p>
+
+  <div class="t">
+  <table>
+    <tr>
+	<th>Type</th>
+	<th>Size (Bytes)</th>
+	<th>Range</th>
+	</tr>
+	
+	<tr>
+	<td>Float</td>
+	<td>4</td>
+	<td>3.4E-38 to 3.4E+38</td>
+	</tr>
+	
+    <tr>
+	<td>Double</td>
+	<td>8</td>
+	<td>1.7E-308 to 1.7E+308</td>
+	</tr>
+	
+	<tr>
+	<td>Long double</td>
+	<td>10</td>
+	<td>3.4E-4932 to 1.1E+4932</td>
+	</tr>
+</table>
+</div>
+
+ <h1>Character type</h1>
+<p>Character types are used to store characters value.</p>
+
+  <div class="t">
+  <table>
+    <tr>
+	<th>Type</th>
+	<th>Size (Bytes)</th>
+	<th>Range</th>
+	</tr>
+	
+	<tr>
+	<td>Unsigned char</td>
+	<td>1</td>
+	<td>0 to 255</td>
+	</tr>
+	
+	<tr>
+	<td>Char or signed char</td>
+	<td>1</td>
+	<td>-128 to 127</td>
+	</tr>
+</table>
+</div>
+
+  <h1>Void type</h1>
+<p>Void type means no value. This is usually used to specify the type of functions which returns nothing.</p>
+
+
+
+
+
+
+ </div>
+      
+  
+  
+  
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
