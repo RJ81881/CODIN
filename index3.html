@@ -92,12 +92,41 @@
           }
           .First .F1 h1{
 		  text-align:center;
-		  font-size:55px;
+		  font-size:45px;
 		  font-weight:normal;
 		  font-family:Georgia;
 		  padding:10px;
 		  margin:5px;
            }
+           .F1 h2{
+		  font-size:40px;
+		   padding:10px;
+		   margin:5px;
+		   text-align:center;
+		   font-weight:normal;
+		  font-family:Georgia;
+		   }
+		.F1 ol{
+			   padding:15px;
+			   margin-left:15px;
+			   } 
+		.F1 ol li{
+				   font-size:30px;
+				   padding:10px;
+				   }.F1{
+					   background-color:white;
+					   width:auto;
+					   height:auto;
+					   }.F2{
+						background-color:#f2f2f2;
+					   width:auto;
+					   height:auto; 
+		}
+						  
+						  
+				
+		
+		
         </style>
     </head>
     <body>
@@ -138,21 +167,21 @@
 <div class="F1">
  <h1>First C Program and its Structure</h1>
 <pre>
-<code style="font-size:15px;">
+<code style="font-size:25px;">
  #include&ltstdio.h&gt
  main()
 {
  printf("Hello,World"); //single line comment
  return 0;
 }
- <p>Output :</p>
+ <p style="font-size:25px;">Output :</p>
  Hello,World
 </code>
 </pre>
 </div>
 <div class="F1">
 <h2>Different parts of C program</h2>
-<ol style="list-style-type:none; font-size:18px;">
+<ol>
 <li>Pre-processor</li>
 <li>Header file</li>
 <li>Variables</li>
@@ -161,13 +190,13 @@
 <li>Comments</li>
 </ol>
 </div>
-<div class="F1">
+<div class="F2">
 <h2>Pre-processor</h2>
 <p>#include is the first word of any C program. It is also known as a pre-processor. The job of a pre￾processor is to initialize the environment of the program, i.e to link the program with the header 
 files required.
 So, when we say #include <stdio.h>, it is to inform the compiler to include the stdio.h header file to 
-the program before executing it.</p>
-<h2>Header file</h2>
+the program before executing it.</p></div>
+<div class="F1"><h2>Header file</h2>
   
   <p>A Header file is a collection of built-in functions, which we can directly use in our program. 
 Header files contain definitions of the functions which can be included into any C program by using 
@@ -179,24 +208,22 @@ piece of function which comes with the C language and you can use them irrespect
 work, all you have to do is include the header file in your program.
 For example, to use the printf() function in a program, which is used to display anything on the 
 screen, the line <code>#include<stdio.h></code> is required because the header file stdio.h 
-contains the printf() function. All header files will have an extension .h</p>
-<h2>main() function</h2>
+contains the printf() function. All header files will have an extension .h</p></div>
+<div class="F2"><h2>main() function</h2>
 <p>main() function is a function that must be there in every C program. Everything inside this 
 function in a C program will be executed. In the above example,. we will discuss about it in detail 
 later. The curly braces { } just after the main() function encloses the body of main() function.
-We will learn what functions are in upcoming tutorials.</p>
-<h2>Comments</h2>
+We will learn what functions are in upcoming tutorials.</p></div>
+ <div class="F1"><h2>Comments</h2>
 <p>We can add comments in our program to describe what our program is all about. These 
 comments are ignored by the compiler and are not executed.
 To add a single line comment, start it by adding two forward slashses // followed by the comment.
-To add multiline comment, place it between /* .... */ .</p>
-<h2>Return statement -> return 0;</h2>
+To add multiline comment, place it between /* .... */ .</p></div>
+<div class="F2"><h2>Return statement -> return 0;</h2>
 <p>A return statement is just to define the end of any C program.
 All the C programs can be written and edited in normal text editors like Notepad or Notepad++ and 
-must be saved with a file name with extension as .c .</p>
+must be saved with a file name with extension as .c .</p></div>
 </div>
-</div>
-          
           <script>
     var i=0;
     function gg()
