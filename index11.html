@@ -1,0 +1,365 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+	   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6713783394501499",
+          enable_page_level_ads: true
+     });
+</script>
+	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Website ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6713783394501499"
+     data-ad-slot="6594703790"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+		  
+		   .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+		
+            .m1 h1{
+			 font-family:Georgia;
+			 padding:13px;
+			 margin:15px;
+			 }
+            .m1 p{
+               padding:13px;
+               margin:15px; 
+			   font-size:22px;
+		       word-spacing:3px;
+		       letter-spacing:1px;
+		       line-height:35px;
+			 }  
+			 
+			 .m1 ol{
+			   padding:25px;
+			   margin-left:30px;
+			   } 
+		.m1 ol li{
+				   font-size:22px;
+				   padding:15px;
+				   }
+          	.m1 p , .m1 p{ 
+			font-size: 22px; 
+			word-spacing:4px; 
+			letter-spacing:1px; 
+			line-height:35px; 
+			padding:20px; 
+			font-family:serif;
+			margin-left:10px;
+		} 
+		.m1 code{ font-size:25px;}  
+		.m1 p:first-letter , .m1 p:first-letter{  font-size:40px; color:blue; font-family:Georgia; }
+			 
+			 .c{
+			   background-color:white;
+			   padding:25px;
+			   margin:25px 38px 25px 38px;
+			   width:auto;
+			   height:auto;
+			   border:3px solid #eee;
+			   border-radius:6px;
+			  /* transition:width 10s;
+			   transition-timing-function:linear;
+			   transition-delay:2s; */
+			 }
+			 .c code{
+			   color:Dodgerblue;
+			   text-shadow:.4px .4px .4px black,.4px .4px .4px silver;
+			   }
+			 
+			/* .c:hover{
+                      width:500px;
+					}*/
+			 
+			 
+			 
+			 
+		
+		
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Precedence and Associativity</a></li>
+	        <li><a href="index9.html">If else statements</a></li>
+            <li><a href="index10.html">Switch Statements</a></li>
+            <li><a href="index11.html">Arrays</a></li>
+            <li><a href="index12.html">Strings and Character Array</a></li>
+            <li><a href="index13.html">Loops</a></li>
+            <li><a href="index14.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+         <div id="m" class="m1">
+         <h1>Arrays</h1>
+		 <p> An array is defined as finite collection of homogenous data, stored in contiguous memory locations.</p>
+		
+		<h1>Examples where Arrays are used</h1>
+       <ol>
+		<li>to store Id's of students,</li>
+		<li>to store list of Employee or Student names,</li>
+		<li> to store list of numbers or characters </li>
+	   </ol> 
+	   
+	   <p>Since arrays provide an easy way to represent data, it is classified amongst the data structures in C. Other data structures in c are structure, lists, queues, trees etc. Array can be used to represent not only simple list of data but also table of data in two or three dimensions.</p>
+        
+		<h1>Declaring an Array</h1>
+        <p>Like any other variable, arrays must be declared before they are used.</p>
+		<p>For Example : data-type variable_name[size];<br>
+                         int a[10];</p>
+        <p>Here int is the data type, a is the name of the array and 10 is the size of array. It means array 'a' can only contain 10 elements of int type.Index of an array starts from 0 to size-1 i.e first element of arr array will be stored at a[0] address and the last element will occupy a[9].</p>						 
+
+        <h1>Initialization of an Array</h1>
+		<p>After an array is declared it must be initialized. Otherwise, it will contain garbage value(any random value). An array can be initialized at either compile time or at runtime.</p>
+		
+		<h1>Compile time Array initialization</h1>
+		<div class="c">
+		<p>data-type array_name[size] = { list of values };<br>
+
+            int score[4]={ 67, 87, 56, 77 };<br>
+            float area[5]={ 23.4, 6.8, 5.5 };<br>
+            int marks[4]={ 67, 87, 56, 77, 59 };  // Compile time error</p>
+		</div>
+		
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          void main( )<br>
+        {<br>
+           int i;<br>
+           int arr[4]={1,2,3,4};<br>
+		   for(i=0&#59i<4&#59i++)
+          {<br> 
+             printf("%d\t",arr[i]);<br>
+          }<br>
+		}<br>
+		<p>Outout :</p>
+		            1 2 3 4
+        </code>
+        </div> 		
+        
+		<h1>Runtime Array initialization</h1>
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          void main( )<br>
+        {<br>
+           int i;<br>
+           int arr[4];<br>
+		   printf("Enter Array Elements");<br>
+		   for(i=0&#59i<4&#59i++)<br>
+          {<br> 
+             scanf("%d",&amparr[i]);<br>
+          }<br>
+		  for(i=0&#59i<4&#59i++)
+          {<br> 
+             printf("%d\t",arr[i]);<br>
+          }<br>
+		}<br>
+        </code>
+        </div> 		
+		
+		<h1>Two dimensional Arrays</h1>
+		<p>C language supports multidimensional arrays also. The simplest form of a multidimensional array is the two-dimensional array. Both the row's and column's index begins from 0.</p>
+		<p>Two-dimensional arrays are declared as follows :</p>
+		<p>data-type array-name[row-size][column-size];<br>
+		   int a[3][4];</p>
+		
+		<p>An array can also be declared and initialized together. For example :</p>
+		<p>int arr[][3] = {  {0,0,0},<br>{1,1,1} <br>};</p>
+		<p>We have not assigned any row value to our array in the above example. It means we can initialize any number of rows. But, we must always specify number of columns, else it will give a compile time error. Here, a 2*3 multi-dimensional matrix is created.</p>
+		
+		<h1>Runtime initialization of a two dimensional Array</h1>
+		
+		<div class="c">
+		<code>
+		   #include&ltstdio.h&gt<br>
+           void main()<br>
+        {<br>
+             int arr[3][4];<br>
+             int i, j, k;<br>
+             printf("Enter array element");<br>
+             for(i = 0&#59 i < 3&#59 i++)<br>
+           {<br>
+                for(j = 0&#59 j < 4&#59 j++)<br>
+              {<br>
+                scanf("%d", &amparr[i][j]);<br>
+              }<br>
+           }<br>
+                for(i = 0; i < 3; i++)<br>
+             {<br>
+                 for(j = 0; j < 4; j++)<br>
+               {<br>
+                 printf("%d", arr[i][j]);<br>
+               }<br>
+             }<br>
+        }<br>
+        </code>
+        </div>
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
