@@ -1,5 +1,4 @@
-           
-   <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <title>If else statements</title>
@@ -151,6 +150,51 @@
 		       letter-spacing:1px;
 		       line-height:35px;
 			 }  
+			 
+			 .m1 ol{
+			   padding:25px;
+			   margin-left:30px;
+			   } 
+		.m1 ol li{
+				   font-size:22px;
+				   padding:15px;
+				   }
+          	.m1 p , .m1 p{ 
+			font-size: 22px; 
+			word-spacing:4px; 
+			letter-spacing:1px; 
+			line-height:35px; 
+			padding:20px; 
+			font-family:serif;
+			margin-left:10px;
+		} 
+		.m1 code{ font-size:25px;}  
+		.m1 p:first-letter , .m1 p:first-letter{  font-size:40px; color:blue; font-family:Georgia; }
+			 
+			 .c{
+			   background-color:white;
+			   padding:20px;
+			   margin:15px 15px 15px 30px;
+			   width:auto;
+			   height:auto;
+			   border:3px solid #eee;
+			   border-radius:6px;
+			   transition:width 10s;
+			   transition-timing-function:linear;
+			   transition-delay:2s;
+			 }
+			 .c code{
+			   color:Dodgerblue;
+			   text-shadow:.4px .4px .4px black,.4px .4px .4px silver;
+			   }
+			 
+			 .c:hover{
+                      width:500px;
+					}
+			 
+			 
+			 
+			 
 		
 		
         </style>
@@ -196,73 +240,139 @@
 		 <p>Decision making is about deciding the order of execution of statements based on certain conditions or repeat a group of statements until certain specified conditions are met.</p>
 
          <h1>Decision making with if statement</h1>
-         <p>The naming of an address is known as variable.and Variable is the name of memory location. </p>
+         <p>The if statement may be implemented in different forms and The different forms are,</p>
          
-		 <div class="t">
-         <table>Decision making with if statement
-		 
-         <tr>
-	     <th>Precedence</th>
-	     <th>Operators</th>
-	     <th>Assosciativity</th>
-	     </tr>
-		 
-	     <tr>
-	     <td>1</td>
-	     <td>() , [] , . , -></td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>2</td>
-	     <td>++ , -- , ~ , !</td>
-	     <td>R to L</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>3</td>
-	     <td>* , / , %</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>4</td>
-	     <td>+ , -</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>5</td>
-	     <td>&lt&lt , &gt&gt</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>6</td>
-	     <td>< , <= , > , >=</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>7</td>
-	     <td>== , !=</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>8</td>
-	     <td>& , ^ , |</td>
-	     <td>L to R</td>
-	     </tr>
-		 
-		 <tr>
-	     <td>9</td>
-	     <td>&& , ||</td>
-	     <td>L to R</td>
-	     </tr>
-         </table>
-         </div> 
+		<ol>
+		<li>if statement</li>
+		<li>if else statement</li>
+		<li>Nested if else statemen</li>
+		<li>else if statement</li>
+		</ol>
 
+        <h1>if statement</h1>
+        <p>The general form of a simple if statement is :</p>
+		<div class="c">
+		<code>
+		     if(expression)<br>
+           {<br>
+              statement 1;<br>
+           }<br>
+              statement 2;<br>
+        </code>	
+		</div>
+        <p>If the expression returns true, then the statement 1 will be executed, otherwise statement 1 is skipped and only the statement 2 is executed.</p>
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          void main( )<br>
+         {<br>
+           int x;<br>
+           x = 99<br>
+           if (x>0)<br>
+          {<br>
+            printf("x is greater than zero");<br>
+          }<br>
+        }<br>
+		<p>Outout :</p>
+		            x is greater than zero
+        </code>		 
+		</div>
+        <h1>if else statement</h1>
+        <p>The general form of a if else statement is :</p>
+		<div class="c">
+		<code>
+		    if(expression)<br>
+           {<br>
+              statement 1;<br>
+           }<br>
+		   else<br>
+		   {<br>
+              statement 2;<br>
+		   }<br>
+        </code>
+		</div>
+        <p>If the expression returns true, then the statement 1 will be executed, else statement 2 is executed.</p>
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          void main( )<br>
+         {<br>
+           int x;<br>
+           x = 99;<br>
+           if (x>0)<br>
+          {<br> 
+            printf("x is greater than zero");<br>
+          }<br>
+		  else<br>
+		  {<br>
+		    printf("x is not greater than zero");<br>
+		  }<br>
+        }<br>
+		<p>Outout :</p>
+		            x is greater than zero
+        </code>
+        </div> 		
+         <h1>Nested if else statement</h1>
+        <p>The general form of a Nested if else statement is :</p>
+		<div class="c">
+		<code>
+		 if( expression )<br>
+       {<br>
+          if( expression1 )<br>
+        {<br>
+          statement 1;<br>
+        }<br>
+    else<br> 
+        {<br>
+         statement 2;<br>
+        }<br>
+      }<br>
+    else<br>
+        {<br>
+         statement 3;<br>
+        }<br>
+        </code>
+        </div>		
+        <p>if expression is false then statement 3 will be executed, otherwise the execution continues and enters inside the first if to perform the check for the next if block, where if expression 1 is true the statement 1 is executed otherwise statement 2 is executed.</p>
+		<div class="c">
+		<code>
+		   #include&ltstdio.h&gt<br>
+           void main( )<br>
+          {<br>
+            int a, b, c;<br>
+            printf("Enter 3 numbers...");<br>
+            scanf("%d%d%d",&a, &b, &c);<br>
+            if(a > b)<br>
+          {<br> 
+           if(a > c)<br>
+          {<br>
+            printf("a is the greatest");<br>
+          }<br>
+        else<br> 
+          {<br>
+            printf("c is the greatest");
+          }<br>
+          }<br>
+    else<br>
+        {<br>
+         if(b > c)<br>
+        {<br>
+          printf("b is the greatest");<br>
+        }<br>
+        else<br>
+        {<br>
+          printf("c is the greatest");<br>
+        }<br>
+        }<br>
+        }<br>
+        </code>
+        </div>		
+       <h1>Points to Remember</h1>
+       <ol>
+		<li>Other than 0(zero), all other values are considered as true.means if(-10) or if(10) is always true.</li>
+		<li>== must be used for comparison in the expression of if condition, if you use = the expression will always return true, because it performs assignment not comparison.</li>
+	   </ol> 
+        <br>
 	  </div>
     <script>
     var i=0;
