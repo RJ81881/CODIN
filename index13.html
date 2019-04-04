@@ -1,0 +1,415 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+	   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6713783394501499",
+          enable_page_level_ads: true
+     });
+</script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6713783394501499"
+     data-ad-slot="6594703790"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+		  
+		   .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+		
+            .m1 h1{
+			 font-family:Georgia;
+			 padding:13px;
+			 margin:15px;
+			 }
+            .m1 p{
+               padding:13px;
+               margin:15px; 
+			   font-size:22px;
+		       word-spacing:3px;
+		       letter-spacing:1px;
+		       line-height:35px;
+			 }  
+			 
+			 .m1 ol{
+			   padding:25px;
+			   margin-left:30px;
+			   } 
+		.m1 ol li{
+				   font-size:22px;
+				   padding:15px;
+				   }
+          	.m1 p , .m1 p{ 
+			font-size: 22px; 
+			word-spacing:4px; 
+			letter-spacing:1px; 
+			line-height:35px; 
+			padding:20px; 
+			font-family:serif;
+			margin-left:10px;
+		} 
+		.m1 code{ font-size:25px;}  
+		.m1 p:first-letter , .m1 p:first-letter,  .m1 ol li:first-letter{  font-size:40px; color:blue; font-family:Georgia; }
+			 
+			 .c{
+			   background-color:white;
+			   padding:25px;
+			   margin:25px 38px 25px 38px;
+			   width:auto;
+			   height:auto;
+			   border:3px solid #eee;
+			   border-radius:6px;
+			  /* transition:width 10s;
+			   transition-timing-function:linear;
+			   transition-delay:2s; */
+			 }
+			 .c code{
+			   color:Dodgerblue;
+			   text-shadow:.4px .4px .4px black,.4px .4px .4px silver;
+			   }
+			 
+			/* .c:hover{
+                      width:500px;
+					}*/
+			 
+			         .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Precedence and Associativity</a></li>
+	        <li><a href="index9.html">If else statements</a></li>
+            <li><a href="index10.html">Switch Statements</a></li>
+            <li><a href="index11.html">Arrays</a></li>
+            <li><a href="index12.html">Strings and Character Array</a></li>
+            <li><a href="index13.html">Loops</a></li>
+            <li><a href="index14.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+         <div id="m" class="m1">
+         <h1>Loops in C</h1>
+		 <p>In any programming language including C, loops are used to execute a set of statements repeatedly until a particular condition is satisfied.</p>
+		
+		<h1>Types of Loop</h1>
+		<p>There are 3 types of Loop in C, namely:</p>
+        <ol>
+		<li>for loop</li>
+		<li>while loop</li>
+		<li>do while loop</li>
+		</ol>
+	   
+	    <h1>for loop</h1>
+	    <p>for loop is used to execute a set of statements repeatedly until a particular condition is satisfied. We can say it is an open ended loop.. General format is :</p>
+	    <h1>Syntax</h1>
+		<div class="c">
+        <p>   for(initialization&#59 condition&#59 increment/decrement)<br>
+            {<br>
+               set of statements;
+            }<br></p>
+	    </div>
+
+		<p>In for loop we have exactly two semicolons, one after initialization and second after the condition. In this loop we can have more than one initialization or increment/decrement, separated using comma operator. But it can have only one condition.</p>
+		
+		<h1>How the for loop executes ?</h1>
+		<ol>
+		<li>It first evaluates the initialization code.</li>
+		<li>Then it checks the condition expression.</li>
+		<li>If it is true, it executes the for-loop body.</li>
+		<li>Then it evaluate the increment/decrement condition and again follows from step 2.</li>
+		<li>When the condition expression becomes false, it exits the loop.</li>
+		</ol>
+		
+		<h1>Program to print first 10 natural numbers</h1>
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          int main( )<br>
+       {<br>
+          int i;<br>
+          for(i = 1&#59 i <= 10&#59 i++)<br>
+        {<br>
+           printf("%d\t",i);<br>
+        }<br>
+       }<br>
+		<p>Outout :</p>
+		            1 2 3 4 5 6 7 8 9 10
+        </code>
+        </div> 		
+        
+		
+		
+		
+		<h1>while loop</h1>
+		<p>while loop can be addressed as an entry control loop. It is completed in 3 steps.</p>
+		<ol>
+		<li>Variable initialization.(e.g int i = 0;)</li>
+		<li>condition(e.g while(i <= 10))</li>
+		<li>Variable increment or decrement ( i++ or i-- or i = i + 2 )</li>
+		</ol>
+		
+		<h1>Syntax</h1>
+		 <div class="c">
+        <p>variable initialization;<br>
+           while(condition<br>
+         {<br>
+            statements;<br>
+            variable increment or decrement;<br> 
+         }<br></p>
+	    </div>
+		
+		<h1>Program to print first 10 natural numbers</h1>
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          int main( )<br>
+       {<br>
+           int i;<br>
+           i = 1;<br>
+           while(i <= 10)<br>
+         {<br>
+            printf("%d\t",i);<br>
+            i++;<br>
+         }<br>
+       }<br>
+		<p>Outout :</p>
+		            1 2 3 4 5 6 7 8 9 10
+        </code>
+        </div> 		
+
+		<h1>do while loop</h1>
+		<p>In some situations it is necessary to execute body of the loop before testing the condition. Such situations can be handled with the help of do-while loop. do statement evaluates the body of the loop first and at the end, the condition is checked using while statement. It means that the body of the loop will be executed at least once, even though the starting condition inside while is initialized to be false. General syntax is,</p>
+		
+		<h1>Syntax</h1>
+		 <div class="c">
+        <p>do<br>
+        {<br>
+          set of statements;
+        }
+          while(condition);<br></p>
+	    </div>
+
+		<h1>Program to print first 10 multiples of 5.</h1>
+		<div class="c">
+		<code>
+		     #include&ltstdio.h&gt<br>
+             int main()<br>
+       {<br>
+               int b, i;<br>
+               b = 5;<br>
+               i = 1;<br>
+           do<br>
+         {<br>
+           printf("%d\t", b*i);<br>
+           i++;<br>
+         }<br> 
+           while(i <= 10);<br>
+       }<br>
+		   <p>Outout :</p>
+		            5 10 15 20 25 30 35 40 45 50
+		   
+        </code>
+        </div> 		
+		
+		<h1>Jumping Out of Loops</h1>
+		<p>Sometimes, while executing a loop, it becomes necessary to skip a part of the loop or to leave the loop as soon as certain condition becomes true. This is known as jumping out of loop.</p>
+        
+		<h1>1.&nbsp  break statement</h1>
+		<p>When break statement is encountered inside a loop, the loop is immediately exited and the program continues with the statement immediately following the loop.</p>
+		
+		<h1>2.&nbsp  continue statement</h1>
+		<p>It causes the control to go directly to the test-condition and then continue the loop process. On encountering continue, cursor leave the current cycle of loop, and starts with the next cycle.</p>
+	
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
