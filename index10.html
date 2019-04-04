@@ -1,0 +1,355 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Statements</title>
+	   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6713783394501499",
+          enable_page_level_ads: true
+     });
+</script>
+	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Website ads -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-6713783394501499"
+     data-ad-slot="6594703790"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        <style>
+        body{
+            background-color:#f2f2f2;
+           }
+        *{
+          margin:0px;
+          padding:0px;
+         }     
+      .heading{
+            width:auto;
+            height:100px;
+			font-size:50px;
+            background-color:#f2f2f2;
+            text-align:center;
+            line-height:100px;
+        }    
+        .c0{
+            color:#ee;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+        .c1{
+            color:green;
+			font-size:50px;
+            font-family:serif;
+            display:inline;
+        }
+     /*    .d{
+            position:sticky;
+            top:0;
+            z-index:100;
+        } */
+        .d .menu{
+            background-color:green;
+            opacity:0.7;
+            width:auto;
+            height:90px;
+			margin:0px;
+            position:sticky;
+        }
+      
+       .d .menu #sidebar{
+           position:absolute;
+           width:550px;
+           height:4000px;
+           left:-550px;
+           opacity:1.0;
+           background-color:black;
+       }     
+        .d .menu #sidebar ul li{
+             color:white;
+             list-style-type:none;
+             padding:25px 15px;
+			 font-size:35px;
+         }  
+         .d .menu #sidebar .toggle{
+             position:absolute;
+             left:550px;
+             top:0px;
+             width:60px;
+             height:50px;
+             margin:0px;
+             padding:20px 15px;
+            // border:1px solid black;
+            }
+           .d .menu #sidebar ul li a{
+            color:white;
+			font-size:35px;
+            text-decoration:none;
+            padding:25px 15px;
+            font-weight:bold;
+        }    
+         .d .menu #sidebar .toggle span{
+             display:block;
+             width:38px;
+             height:7px;
+             background-color:#151719;
+             margin:5px;
+         }  
+         .d .menu #sidebar.active 
+        {
+              left:0px;
+        }   
+         .d .menu #sidebar .toggle:hover
+          {
+              background-color:Dodgerblue;
+          }
+		  
+		   .t{
+		  padding:20px;
+		  margin:15px;
+		  }
+		.t table{
+		  width:800px;
+		  height:auto;
+		  margin:20px;
+		  padding:40px;
+		  }
+	
+           .t table,td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+				font-size:30px;
+		   
+            }
+            .t table td{
+                text-align:center;
+                padding:15px;
+            }
+            .t table tr:nth-child(odd)
+            {
+               background-color:#d2d2d2; 
+            }
+            .t table tr:nth-child(even)
+            {
+               background-color:#eee; 
+            }
+		
+            .m1 h1{
+			 font-family:Georgia;
+			 padding:13px;
+			 margin:15px;
+			 }
+            .m1 p{
+               padding:13px;
+               margin:15px; 
+			   font-size:22px;
+		       word-spacing:3px;
+		       letter-spacing:1px;
+		       line-height:35px;
+			 }  
+			 
+			 .m1 ol{
+			   padding:25px;
+			   margin-left:30px;
+			   } 
+		.m1 ol li{
+				   font-size:22px;
+				   padding:15px;
+				   }
+          	.m1 p , .m1 p{ 
+			font-size: 22px; 
+			word-spacing:4px; 
+			letter-spacing:1px; 
+			line-height:35px; 
+			padding:20px; 
+			font-family:serif;
+			margin-left:10px;
+		} 
+		.m1 code{ font-size:25px;}  
+		.m1 p:first-letter , .m1 p:first-letter{  font-size:40px; color:blue; font-family:Georgia; }
+			 
+			 .c{
+			   background-color:white;
+			   padding:25px;
+			   margin:25px 38px 25px 38px;
+			   width:auto;
+			   height:auto;
+			   border:3px solid #eee;
+			   border-radius:6px;
+			  /* transition:width 10s;
+			   transition-timing-function:linear;
+			   transition-delay:2s; */
+			 }
+			 .c code{
+			   color:Dodgerblue;
+			   text-shadow:.4px .4px .4px black,.4px .4px .4px silver;
+			   }
+			 
+			/* .c:hover{
+                      width:500px;
+					}*/
+			 
+			 
+			 
+			 
+		
+		
+        </style>
+    </head>
+    <body>
+   
+    <div class="heading">
+       <h1 class="c0">CODING&nbsp</h1><h1 class="c1">SCHOOL</h1>
+    </div>
+    
+   <div class="d">
+    <div class="menu">
+      <div id="sidebar">
+           
+        <div class="toggle" onclick="gg()" >
+             <span></span> 
+             <span></span>
+             <span></span>
+          </div>
+          <ul>
+          <li>BASICS OF C</li>
+            <li><a href="index1.html">Overview of C Language</a></li>
+            <li><a href="index2.html">Features of C</a></li>
+            <li><a href="index3.html">First C Program</a></li>
+            <li><a href="index4.html">C syntax rules</a></li>
+            <li><a href="index5.html">keywords and Identifires</a></li>
+            <li><a href="index6.html">Data Types</a></li>
+            <li><a href="index7.html">Variables</a></li>
+            <li><a href="index8.html">Precedence and Associativity</a></li>
+	    <li><a href="index9.html">If else statements</a></li>
+            <li><a href="index10.html">Switch Statements</a></li>
+            <li><a href="index11.html">Arrays</a></li>
+            <li><a href="index12.html">Strings and Character Array</a></li>
+            <li><a href="index13.html">Loops</a></li>
+            <li><a href="index14.html">Storage Classes</a></li>
+          </ul>
+      </div>  
+      </div>
+      </div>
+   
+         <div id="m" class="m1">
+         <h1>Switch statement</h1>
+		 <p>When you want to solve multiple option type problems, for example: Menu like program, where one value is associated with each option and you need to choose only one at a time, then, switch statement is used.</p>
+
+         <p>Switch statement is a control statement that allows us to choose only one choice among the many given choices. The expression in switch evaluates to return an integral value, which is then compared to the values present in different cases. It executes that block of code which matches the case value. If there is no match, then default block is executed(if present). The general form of switch statement is,</p>
+
+		<div class="c">
+		<code>
+		   switch(expression)<br>
+      {
+        case 1:&nbsp block 1;<br>
+    	             break;<br>
+        case 2:&nbsp block 2;<br>
+    	             break;<br>
+        case 3:&nbsp block 3;<br>
+                     break;<br>
+        case 4:&nbsp block 4;<br>
+   	                 break;<br>
+       default:&nbsp default-block;<br>
+    	             break;<br>
+     }
+        </code>	
+		</div>
+		
+		<h1>Rules for using switch statement</h1>
+       <ol>
+		<li>The case label values must be unique.</li>
+		<li>After the switch keyword the expression must be aninteger or must be a character</li>
+		<li>The case label must end with a colon(:)</li>
+		<li>The next line, after the case statement, can be any valid C statement.</li>
+	   </ol> 
+	   
+	   
+        <h1>Points to Remember</h1>
+		<ol>
+		    <li>break statements are used to exit the switch block. It isn't necessary to use break after each block, but if you do not use it, then all the consecutive blocks of code will get executed after the matching block.</li>
+		    <li>default case is executed when none of the mentioned case matches the switch expression. The default case can be placed anywhere in the switch case. Even if we don't include the default case, switch statement works.</li>
+        </ol> 
+		<div class="c">
+		<code>
+		  #include&ltstdio.h&gt<br>
+          void main( )<br>
+         {<br>
+           int x=1;<br>
+           switch(x)<br>
+          {<br> 
+            case 1:&nbsp printf("1 ");<br>        
+            case 2:&nbsp printf("2 ");<br>
+            case 3:&nbsp printf("3 ");<br>
+            break;<br>
+          }<br>
+		<p>Outout :</p>
+		            1 2 3
+        </code>
+        </div> 		
+        
+		<div class="c">
+		<code>
+		 #include&ltstdio.h&gt<br>
+         void main( )<br>
+      {<br>
+         int a, b, c, choice;<br>
+         while(choice != 3)<br>
+       {<br>
+        printf("\n 1. Press 1 for Addition");<br>
+        printf("\n 2. Press 2 for Multiplication");<br>
+        printf("\n Enter your choice");<br>
+        scanf("%d", &choice);<br>
+        switch(choice)<br>
+        {<br>
+            case 1:<br>
+                printf("Enter 2 numbers");<br>
+                scanf("%d%d", &a, &b);<br>
+                c = a + b;<br>
+                printf("%d", c);<br>
+                break;<br><br>
+            case 2:<br>
+                printf("Enter 2 numbers");<br>
+                scanf("%d%d", &a, &b);<br>
+                c = a * b;<br>
+                printf("%d", c);<br>
+                break;<br><br>
+            default:<br>
+                printf("you have passed a wrong key");<br>
+                printf("\n press any key to continue");<br>
+        }<br>
+    }<br>
+}<br> 
+        </code>
+        </div>
+		<h1>Difference between switch and if</h1>
+       <ol>
+		<li>if statement can evaluate relational operators. switch statement cannot evaluate relational operators i.e they are not allowed in switch statement.</li>
+		<li>if statements can evaluate float conditions. switch statements cannot evaluate float conditions.</li>
+	   </ol> 
+        <br>
+	  </div>
+    <script>
+    var i=0;
+    function gg()
+{  
+document.getElementById("sidebar").classList.toggle('active');
+i++;
+  ff(i);
+}
+function ff(i){
+   if((i%2)!=0) 
+   {  document.getElementById("m").style.display="none";
+}
+else
+{
+   document.getElementById("m").style.display="block"; 
+}
+}
+</script>
+      
+    </body>
+</html>
