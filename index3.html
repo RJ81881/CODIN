@@ -137,7 +137,29 @@
 		.F1 p:first-letter , .F2 p:first-letter{  font-size:40px; color:blue; font-family:Georgia; }
 			
 			
-			
+		 .footer1{
+                   width:100%;
+                   height:400px;
+                   background-color:#d2d2d2;
+				   margin-bottom:30px;
+				   display:block;
+                }
+			.footer1 p{ 
+			font-size: 22px; 
+			word-spacing:4px; 
+			letter-spacing:1px; 
+			line-height:35px; 
+			padding:20px; 
+			font-family:serif;
+			margin-left:10px;
+		} 
+           img{
+                height:100px; 
+				margin-left:30px;
+              }   				
+            .footer1 a{
+			       padding:15px;
+				   }	
 			
 			
 			
@@ -247,7 +269,16 @@ To add multiline comment, place it between /* .... */ .</p></div>
 All the C programs can be written and edited in normal text editors like Notepad or Notepad++ and 
 must be saved with a file name with extension as .c .</p></div>
 </div>
-          <script>
+<div class="footer1" id="L">
+	
+	<p style="font-size:30px;">&copy 2019 by www.codingschool.ml</p><br><br>
+    <p style="font-size:30px;">Follow us on :</p><br>
+	<a href="https://www.facebook.com/DMRJJ"><img src="https://buffer.com/library/wp-content/uploads/2016/03/FB-f-Logo__blue_144.png" /></a>
+	<a href="https://rahuljain9513065153@gmail.com"><img src="https://buffer.com/library/wp-content/uploads/2016/03/google-plus.png"/></a>
+	<a href="https://www.youtube.com/channel/UCgyAIRG7GF7V8rIZao-6Kdw?view_as=subscriber"><img src="https://buffer.com/library/wp-content/uploads/2016/03/YouTube-logo-full_color-300x187.png"/></a>
+
+    </div>	  
+    <script>
     var i=0;
     function gg()
 {  
@@ -257,19 +288,17 @@ i++;
 }
 function ff(i){
    if((i%2)!=0) 
-   {  document.getElementById("m").style.display="none";
-}
+   {  
+      document.getElementById("m").style.display="none";
+      document.getElementById("L").style.display="none";
+   }
 else
 {
    document.getElementById("m").style.display="block"; 
+   document.getElementById("L").style.display="block"; 
 }
 }
-</script>
-          
-          
-          
-          
-          
+</script>    
 </body>
 </html>
   
