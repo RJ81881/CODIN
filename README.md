@@ -1,1 +1,1 @@
-# CODIN
+# CODING SCHOOL
